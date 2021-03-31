@@ -1,0 +1,34 @@
+// variable
+$primary-font:'Montserrat', sans-serif;
+$primary-color: #27AE60;
+// minxins
+@mixin position($type,$y, $x) {
+     position: absolute;
+     @if $type == 'bl' {
+          bottom: $y;
+          left: $x;
+     }@else if $type == 'br'{
+          bottom: $y;
+          right: $x;
+     }
+     @else if $type == 'tr'{
+          top: $y;
+          right: $x;
+     }
+     @else if $type == 'tl'{
+          top: $y;
+          left: $x;
+     }
+}
+
+a{
+     text-decoration: none;
+}
+button, input{
+     border: none;
+     outline: none;
+     background: transparent;
+}
+ul, ol{
+     list-style: none;
+}
